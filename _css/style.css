@@ -1,0 +1,198 @@
+
+@font-face {
+	font-family: 'Neutra Text';
+	src: url('../_fonts/NeutrafaceText/NeutrafaceText-Bold.eot');
+	src: url('../_fonts/NeutrafaceText/NeutrafaceText-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-Bold.woff') format('woff'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-Bold.ttf') format('truetype'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-Bold.svg#NeutrafaceText-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Neutra Text Demi Alt';
+	src: url('../_fonts/NeutrafaceText/NeutrafaceText-DemiAlt.eot');
+	src: url('../_fonts/NeutrafaceText/NeutrafaceText-DemiAlt.eot?#iefix') format('embedded-opentype'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-DemiAlt.woff') format('woff'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-DemiAlt.ttf') format('truetype'),
+		url('../_fonts/NeutrafaceText/NeutrafaceText-DemiAlt.svg#NeutrafaceText-DemiAlt') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+  background: #1E1E1E; }
+
+#intro-section {
+  width: 100%;
+  height: 100%; }
+
+  #header {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+  }
+
+  #time_now {
+    color: white;
+    font-family: 'Neutra Text Demi Alt', sans-serif !important;
+    font-size: 1.414em;
+    text-align: center;
+    padding: 30px;
+
+  }
+
+#title-box {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+ #title-box #title {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    color: white; 
+    top: 50px;
+  }
+
+    #title-box #title h1 {
+      font-family: 'Neutra Text', sans-serif !important;
+      font-size: 6.854em;
+      letter-spacing: 3.4px;
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      background: url('../_images/11.png') no-repeat; 
+      /*20/22/23/19/18/17/16/15/14/13/12/11/10/7/5/2/*/
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+  #title-box #status {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Neutra Text Demi Alt', sans-serif !important;
+    font-size: 1.414em;
+    top: 50px;
+    letter-spacing: 1.2px;
+  }
+
+.animation-container {
+  width: 300%;
+  height: 30px;
+  position: relative;
+  top: 580px; 
+}
+  .sound-container {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+    margin-left: 4px;
+  }
+  .animation-container .sound-container>div {
+    position: relative;
+    height: 100%;
+    width: 10px;
+    background: #540D6E;
+    display: inline-block;
+    animation: wave 3s infinite ease-in-out;
+    -webkit-animation: wave 3s infinite ease-in-out;
+  }
+
+  .animation-container .sound-container .rect-2 {
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+  }
+
+  .animation-container .sound-container .rect-3 {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+
+  .animation-container .sound-container .rect-4 {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+
+  .animation-container .sound-container .rect-5 {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+
+  .animation-container .sound-container .rect-6 {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+
+  @keyframes slide{
+      100%{
+        transform: translateX(-29.6rem)
+      }
+  }
+
+  @keyframes wave{
+    0%,
+    100%{
+      transform: scaleY(1);
+      background: #008DD5;
+    }
+    16.67%{
+      transform: scaleY(3);
+      background: #FFF38E;
+    }
+    33.33%{
+      transform: scaleY(1);
+      background: #FF8C42;
+    }
+    50%{
+      transform: scaleY(3);
+      background: #FF514F;
+    }
+    66.67%{
+      transform: scaleY(1);
+      background: #B0228C;
+    }
+    83.34%{
+      transform: scaleY(3);
+      background: #7DDF64;
+    }
+  }
+
+  @-webkit-keyframes load {
+    0%,
+    100%{
+      -webkit-transform: scaleY(1);
+      background: #008DD5;
+    }
+    16.67%{
+      -webkit-transform: scaleY(3);
+      background: #FFF38E;
+    }
+    33.33%{
+      -webkit-transform: scaleY(1);
+      background: #FF8C42;
+    }
+    50%{
+      -webkit-transform: scaleY(3);
+      background: #FF514F;
+    }
+    66.67%{
+      -webkit-transform: scaleY(1);
+      background: #F40000;
+    }
+    83.34%{
+      -webkit-transform: scaleY(3);
+      background: #7DDF64;
+    }
+  }
